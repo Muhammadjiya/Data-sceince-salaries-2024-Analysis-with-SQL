@@ -106,7 +106,7 @@ FROM
 GROUP BY 
     company_size;
 
--- Which country pays the highest for "data analsyt" position
+-- 9. Which country pays the highest for "data analsyt" position
 SELECT  
     company_location, AVG(salary_in_usd) as average_salary, 
     COUNT(job_title) AS no_of_jobs
@@ -121,7 +121,7 @@ ORDER BY
     no_of_jobs DESC;
 
 
--- Do remote jobs pay more than on site?
+-- 10. Do remote jobs pay more than on site?
 SELECT
     work_models, ROUND(AVG(salary_in_usd),2) AS avg_salary,
     COUNT(work_models) AS no_of_jobs
@@ -133,7 +133,7 @@ ORDER BY
     avg_salary DESC
 
 
--- Does experience affect earning?
+-- 11. Does experience affect earning?
 SELECT experience_level, ROUND(AVG(salary_in_usd),2) AS avg_salary,
     COUNT(experience_level) AS no_of_jobs
 FROM 
