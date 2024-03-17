@@ -130,7 +130,7 @@ FROM
 GROUP BY 
     work_models
 ORDER BY
-    avg_salary DESC
+    avg_salary DESC;
 
 
 -- 11. Does experience affect earning?
@@ -141,4 +141,4 @@ FROM
 GROUP BY 
    experience_level
 ORDER BY
-    avg_salary DESC
+    avg_salary DESC;
